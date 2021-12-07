@@ -1,0 +1,12 @@
+<html>
+<center>
+  <h2 style='color:red'>Registration page</h2>
+<form action="/student2/register/" method="POST">
+  {%csrf_token%} <table border="1">
+    {{ form.as_table }}
+  </table>
+  <h2 style='color:red'> {{Comment}} </h2><br>
+  <button type="submit"> Register </button>
+    </form>
+  </center>
+</html>
