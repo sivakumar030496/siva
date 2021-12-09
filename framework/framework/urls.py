@@ -1,4 +1,4 @@
-"""animals URL Configuration
+"""framework URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.contrib import admin
+from django.urls import path,include
+from webapp.urls import urlpatterns
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('webapp/',include(urlpatterns)),
+
+
 ]

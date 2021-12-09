@@ -1,0 +1,42 @@
+html>
+<head>
+</head>
+<body>
+<center>
+    {% if user.is_authenticated %}
+    <h2> Welcome {{user.username}} </h2>
+    {% endif %}
+
+Students Details
+    <table border = "1px">
+        <thead>
+        <th> firstname </th>
+        <th> lastName </th>
+        <th> emp_id </th>
+        <th> Branch </th>
+        <th> email </th>
+        <th> address </th>
+        <th> gender </th>
+        <th> country</th>
+
+
+        </thead>
+        {% for i in framework %}
+        <tr>
+            <tr>
+        <td> firstname </td>
+        <td> lastName </td>
+        <td> emp_id </td>
+        <td> Branch </td>
+        <td> email </td>
+        <td> address </td>
+        <td> gender </td>
+        <td> country</td>
+ </tr>
+    {% endfor %}
+      </table>
+
+
+</center>
+</body>
+</html>
